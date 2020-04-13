@@ -1,22 +1,77 @@
-<html>
-<form action="signup" method="post">
-帳號: <input type="text" name="user"/><br/>
-密碼: <input type="password" name="password"/><br/>
-信箱: <input type="email" name="email"/><br/>
-生日: <input type="date" name="birthday"/><br/>
-照片: <input type="file" name="picture"/><br/>
-性別: <input type="radio" name="sex" value="male" checked/> 男
-      <input type="radio" name="sex" value="female"/> 女<br/>
-血型: <select name="BloodType">
-        <option value="A">A 型</option>
-        <option value="B">B 型</option>
-        <option value="AB">AB 型</option>
-        <option value="O">O 型</option>
-      </select> <br/>
-自我介紹： <br/>
-<textarea name="AboutMe">
-</textarea> <br/>
-
-<input type="submit" value="送出"/><input type="reset" value="清除"/><br/>
-</form>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
+<body>
+
+   <p><font size="5">執行腳本</font></p>
+
+   <form name="表單" method="post" action="action.php">
+
+
+  
+   <br>
+   <br>
+   請選擇腳本
+   <select name="bash">
+         <option></option>
+         <option> git_pull_allweb.sh </option>
+         <option> git_pull_allweb_stage.sh </option>
+   </select>
+   
+   <br>
+   <br>
+   更新項目    
+   <select name="project">
+	 <option></option>
+         <option> api </option>
+         <option> backend </option>
+         <option> console </option>
+         <option> core </option>
+         <option> cs </option>
+         <option> event </option>
+         <option> frontend </option>
+         <option> member </option>
+         <option> pay </option>
+         <option> resource </option>
+         <option> shop </option>
+         <option> task </option>
+   </select>
+
+   <br>
+   <br>
+   web更新
+   <select name="web">
+         <option></option>
+         <option> www.wegames.com.tw </option>
+         <option> res.wegames.com.tw </option>
+         <option> www.wegames.co.th </option>
+         <option> res.wegames.co.th </option>
+         <option> www.wegames.co.jp </option>
+         <option> www.wegames.biz </option>
+   </select>
+   <br>
+   <br>
+   game更新
+   <select name="game">
+         <option></option>
+         <option> pilix </option>
+         <option> kof-world </option>
+         <option> rom </option>
+         <option> ttl </option>
+         <option> ysyy </option>
+         <option> roman1930 </option>
+         <option> god </option>
+   </select>
+
+
+
+	 <br>
+         <br>
+         <input type="submit" value="送出">
+
+   </form>
+
+</body>
+
+</html>
